@@ -19,4 +19,3 @@ sudo make install
 sudo ldconfig
 
 sudo uhd_images_downloader
-
