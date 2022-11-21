@@ -1,4 +1,5 @@
 # Script
 
-
-wget https://github.com/giovannicotroneo/hdgioscript.git
+```
+wget https://raw.githubusercontent.com/giovannicotroneo/hdgioscript/master/uhdbuild.sh & chmod +X uhdbuild.sh
+```
