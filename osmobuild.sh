@@ -3,7 +3,7 @@
 
 cd ~
 git clone https://github.com/osmocom/libosmocore.git
-cd libosmcore
+cd libosmocore
 autoreconf -fi
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
 ./configure
