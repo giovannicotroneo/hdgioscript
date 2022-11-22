@@ -13,3 +13,51 @@ make check
 sudo make install
 sudo ldconfig
 
+
+sudo apt install libortp-dev dahdi-source
+cd ~
+git clone https://github.com/osmocom/libosmo-abis.git
+cd libosmo-abis
+autoreconf -fi
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
+./configure
+make
+make check
+sudo make install
+sudo ldconfig
+
+cd ~
+git clone https://github.com/osmocom/libosmo-netif.git
+cd libosmo-netif
+autoreconf -fi
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
+./configure
+make
+make check
+sudo make install
+sudo ldconfig
+
+sudo apt install libboost-all-dev
+cd ~
+git clone https://github.com/osmocom/osmo-trx.git
+cd osmo-trx
+autoreconf -fi
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
+./configure --with-uhd --with-sse
+make
+make check
+sudo make install
+sudo ldconfig
+
+sudo apt install libsqlite3-dev
+cd ~
+https://github.com/osmocom/osmo-msc.git
+cd osmo-msc
+autoreconf -fi
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
+./configure
+make
+make check
+sudo make install
+sudo ldconfig
+
