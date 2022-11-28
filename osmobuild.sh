@@ -45,7 +45,7 @@ sudo make install
 sudo ldconfig
 
 # osmo-trx
-sudo apt install -y fftw3-dev libboost-all-dev
+sudo apt install -y fftw3-dev libboost-all-dev libuhd-dev
 cd ~/osmosrc
 git clone https://github.com/osmocom/osmo-trx.git
 cd osmo-trx
@@ -84,7 +84,7 @@ sudo ldconfig
 # osmo-msc
 sudo apt install -y libsqlite3-dev
 cd ~/osmosrc
-https://github.com/osmocom/osmo-msc.git
+git clone https://github.com/osmocom/osmo-msc.git
 cd osmo-msc
 autoreconf -fi
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
