@@ -1,5 +1,6 @@
 
 #!/bin/bash
+# Ubuntu 20.04.5 LTS
 
 sudo apt install autoconf build-essential git-core libtool libtalloc-dev libpcsclite-dev libusb-1.0-0-dev libgnutls28-dev libmnl-dev libsctp-dev
 cd ~
