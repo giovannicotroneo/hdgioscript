@@ -44,6 +44,18 @@ make check
 sudo make install
 sudo ldconfig
 
+# libosmo-sccp
+cd ~/osmosrc
+git clone https://github.com/osmocom/libosmo-sccp.git
+cd libosmo-sccp
+autoreconf -fi
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
+./configure
+make
+make check
+sudo make install
+sudo ldconfig
+
 # osmo-trx
 sudo apt install -y fftw3-dev libboost-all-dev libuhd-dev
 cd ~/osmosrc
