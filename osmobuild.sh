@@ -53,6 +53,30 @@ make check
 sudo make install
 sudo ldconfig
 
+# osmo-bts
+cd ~
+git clone https://github.com/osmocom/osmo-bts.git
+cd osmo-trx
+autoreconf -fi
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
+./configure --with-uhd --with-sse
+make
+make check
+sudo make install
+sudo ldconfig
+
+# osmo-bsc
+cd ~
+git clone https://github.com/osmocom/osmo-bsc.git
+cd osmo-trx
+autoreconf -fi
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
+./configure --with-uhd --with-sse
+make
+make check
+sudo make install
+sudo ldconfig
+
 # osmo-msc
 sudo apt install libsqlite3-dev
 cd ~
