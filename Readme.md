@@ -12,3 +12,9 @@ bash uhdbuild.sh
 wget https://raw.githubusercontent.com/giovannicotroneo/hdgioscript/master/osmobuild.sh
 bash osmobuild.sh
 ```
+
+## Dowlnload osmo cfg
+```
+wget https://raw.githubusercontent.com/giovannicotroneo/hdgioscript/master/osmocfg.sh
+bash osmocfg.sh
+```
