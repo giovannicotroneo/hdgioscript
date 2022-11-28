@@ -63,7 +63,7 @@ git clone https://github.com/osmocom/osmo-bts.git
 cd osmo-bts
 autoreconf -fi
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
-./configure --with-uhd --with-sse
+./configure --enable-trx
 make
 make check
 sudo make install
