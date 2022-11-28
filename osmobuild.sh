@@ -3,7 +3,7 @@
 # Ubuntu 20.04.5 LTS
 
 # libosmocore
-sudo apt install autoconf build-essential git-core libtool libtalloc-dev libpcsclite-dev libusb-1.0-0-dev libgnutls28-dev libmnl-dev libsctp-dev
+sudo apt install -y autoconf build-essential git-core libtool libtalloc-dev libpcsclite-dev libusb-1.0-0-dev libgnutls28-dev libmnl-dev libsctp-dev
 cd ~
 git clone https://github.com/osmocom/libosmocore.git
 cd libosmocore
@@ -16,7 +16,7 @@ sudo make install
 sudo ldconfig
 
 # libosmo-abis
-sudo apt install libortp-dev dahdi-source
+sudo apt install -y libortp-dev dahdi-source
 cd ~
 git clone https://github.com/osmocom/libosmo-abis.git
 cd libosmo-abis
@@ -41,7 +41,7 @@ sudo make install
 sudo ldconfig
 
 # osmo-trx
-sudo apt install libboost-all-dev
+sudo apt install -y fftw3-dev libboost-all-dev
 cd ~
 git clone https://github.com/osmocom/osmo-trx.git
 cd osmo-trx
@@ -78,7 +78,7 @@ sudo make install
 sudo ldconfig
 
 # osmo-msc
-sudo apt install libsqlite3-dev
+sudo apt install -y libsqlite3-dev
 cd ~
 https://github.com/osmocom/osmo-msc.git
 cd osmo-msc
