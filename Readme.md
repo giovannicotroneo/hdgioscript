@@ -1,16 +1,25 @@
 # Script
 
+
+## Install from source
 ```
 sudo apt install git
 git clone giovannicotroneo/hdgioscript
-```
-
-## Build and Install UHD from source
-```
+cd hdgioscript
 bash uhdbuild.sh
-```
-
-## Build and Install OSMO from source
-```
 bash osmobuild.sh
 ```
+
+Run each application from 'osmocfg' folder
+```
+cd osmocfg
+osmo-trx-uhd
+osmo-bts-trx
+osmo-bsc
+osmo-msc
+osmo-hlr
+osmo-mgw
+```
+
+
+
