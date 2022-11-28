@@ -75,7 +75,7 @@ git clone https://github.com/osmocom/osmo-bsc.git
 cd osmo-bsc
 autoreconf -fi
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
-./configure --with-uhd --with-sse
+./configure
 make
 make check
 sudo make install
