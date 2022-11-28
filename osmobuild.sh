@@ -60,7 +60,7 @@ sudo ldconfig
 # osmo-bts
 cd ~/osmosrc
 git clone https://github.com/osmocom/osmo-bts.git
-cd osmo-trx
+cd osmo-bts
 autoreconf -fi
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
 ./configure --with-uhd --with-sse
@@ -72,7 +72,7 @@ sudo ldconfig
 # osmo-bsc
 cd ~/osmosrc
 git clone https://github.com/osmocom/osmo-bsc.git
-cd osmo-trx
+cd osmo-bsc
 autoreconf -fi
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" 
 ./configure --with-uhd --with-sse
