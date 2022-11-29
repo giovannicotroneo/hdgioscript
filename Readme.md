@@ -1,5 +1,7 @@
 # Script
 
+## prerequisite
+* Ubuntu 20.04.5 LTS
 
 ## Install from source
 ```
