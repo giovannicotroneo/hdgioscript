@@ -13,7 +13,7 @@ bash osmobuild.sh
 Run each application from 'osmocfg' folder
 ```
 cd osmocfg
-osmo-trx-uhd
+sudo osmo-trx-uhd -C osmo-trx.cfg
 osmo-bts-trx
 osmo-bsc
 osmo-msc
